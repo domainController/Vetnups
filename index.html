@@ -59,17 +59,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  @media (prefers-reduced-motion: no-preference) {
-    .fade-in { animation: fadeIn 0.9s ease-out both; }
-    .fade-in.d1 { animation-delay: 0.12s; }
-    .fade-in.d2 { animation-delay: 0.24s; }
-    .fade-in.d3 { animation-delay: 0.36s; }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  }
-
   a { color: inherit; }
 
   :focus-visible {
@@ -135,7 +124,7 @@
   /* ---------- Hero ---------- */
 
   .hero {
-    padding: 88px 0 72px;
+    padding: 132px 0 96px;
   }
 
   .hero h1 {
@@ -175,27 +164,27 @@
     color: var(--ink);
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 15px;
-    border-radius: 2px;
+    border-radius: 0;
   }
 
   .email-field::placeholder { color: var(--ink-faint); }
 
   .btn {
     padding: 15px 26px;
-    background: var(--accent);
+    background: var(--ink);
     color: var(--bg);
-    border: 1px solid var(--accent);
+    border: 1px solid var(--ink);
     font-family: "IBM Plex Mono", monospace;
     font-size: 13px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 0;
     cursor: pointer;
     white-space: nowrap;
     transition: opacity 0.15s ease;
   }
 
-  .btn:hover { opacity: 0.86; }
+  .btn:hover { opacity: 0.82; }
 
   .cta-note {
     font-size: 13px;
@@ -205,7 +194,7 @@
   /* ---------- Dossier / attributes section ---------- */
 
   .dossier {
-    padding: 8px 0 88px;
+    padding: 8px 0 128px;
     border-top: 1px solid var(--surface-line);
   }
 
@@ -215,7 +204,7 @@
     align-items: baseline;
     gap: 16px;
     flex-wrap: wrap;
-    padding: 48px 0 8px;
+    padding: 72px 0 8px;
   }
 
   .dossier-head h2 {
@@ -242,7 +231,7 @@
     grid-template-columns: 1fr 1.6fr auto;
     gap: 20px;
     align-items: center;
-    padding: 22px 0;
+    padding: 28px 0;
     border-bottom: 1px solid var(--surface-line);
   }
 
@@ -293,18 +282,18 @@
   /* ---------- Contrast / manifesto ---------- */
 
   .manifesto {
-    padding: 8px 0 92px;
+    padding: 8px 0 128px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 56px;
+    gap: 72px;
     border-top: 1px solid var(--surface-line);
   }
 
   @media (max-width: 780px) {
-    .manifesto { grid-template-columns: 1fr; gap: 40px; padding-top: 48px; }
+    .manifesto { grid-template-columns: 1fr; gap: 40px; padding-top: 64px; }
   }
 
-  .manifesto > div { padding-top: 48px; }
+  .manifesto > div { padding-top: 64px; }
 
   @media (max-width: 780px) {
     .manifesto > div { padding-top: 0; }
@@ -337,7 +326,7 @@
   /* ---------- Footer CTA ---------- */
 
   .closing {
-    padding: 72px 0 64px;
+    padding: 104px 0 88px;
     border-top: 1px solid var(--surface-line);
     text-align: left;
   }
@@ -392,13 +381,13 @@
   <header>
     <div class="wrap header-row">
       <div class="wordmark">Vetnups</div>
-      <div class="label">Profile Verification Dossier — Draft</div>
+      <div class="label">Vetnups is a commitment-oriented dating app.</div>
     </div>
   </header>
 
   <section class="hero">
     <div class="wrap">
-      <h1 class="fade-in d1">For people looking for something serious.</h1>
+      <h1 class="fade-in d1">For singles looking for something serious.</h1>
       <p class="hero-sub fade-in d2">
         Vetnups is built for people who know what they want: marriage, having a baby,
         building a blended family, growing a large one, relocating abroad to be with a
