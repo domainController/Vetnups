@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Index — Narrative Constructs</title>
+<style>
+  :root {
+    --bg: #0a0e17;
+    --text: #e8eaf0;
+    --muted: #8b93a7;
+    --muted-2: #5f6779;
+    --border: #232838;
+    --border-soft: #1a1f2e;
+    --accent-border: #2c3346;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    margin: 0;
+    padding: 60px 24px 120px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+
+  /* site header */
+  .site-meta {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--muted-2);
+    margin: 0 0 28px 0;
+  }
+  .site-header {
+    margin-bottom: 44px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+  .site-name {
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+  .site-valueprop {
+    color: #b7bdcc;
+    font-size: 16px;
+    line-height: 1.55;
+    margin: 0;
+    max-width: 58ch;
+  }
+  .site-valueprop strong { color: var(--text); }
+
+  /* accordion */
+  .pole-menu { color: var(--text); }
+
+  .pole { border-top: 1px solid var(--border); }
+  .pole:last-child { border-bottom: 1px solid var(--border); }
+
+  .pole > summary.pole-header {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 0;
+    user-select: none;
+  }
+  .pole > summary::-webkit-details-marker { display: none; }
+
+  .pole-name { font-weight: 700; font-size: 20px; }
+  .pole-sub { color: var(--muted); font-size: 14px; }
+  .pole-count {
+    margin-left: auto;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .pole-chevron {
+    width: 10px; height: 10px;
+    border-right: 2px solid var(--muted);
+    border-bottom: 2px solid var(--muted);
+    transform: rotate(-45deg);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+  }
+  .pole[open] .pole-chevron { transform: rotate(45deg); }
+
+  .pole-valueprop {
+    margin: 0 0 18px 0;
+    padding: 14px 16px;
+    border-left: 2px solid var(--accent-border);
+    color: #b7bdcc;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .pole-valueprop strong { color: var(--text); }
+
+  .pole-body { padding-bottom: 8px; }
+
+  .entry {
+    padding: 18px 0 18px 8px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .entry-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .entry-name { font-weight: 700; font-size: 17px; }
+  .entry-desc { color: var(--muted); margin: 0; }
+
+  .badge {
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11px;
+    padding: 3px 9px;
+    border-radius: 4px;
+  }
+  .badge-draft { color: #d9a441; background: #3a2f16; }
+  .badge-live { color: #5fce8a; background: #16301f; }
+  .badge-concept { color: #c98be0; background: #2d1b36; }
+  .badge-research { color: #7aa2c9; background: #132537; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="site-meta">Site Index · Version 0.3.0 — draft · Updated 24.08.2026</p>
+
+  <div class="site-header">
+    <p class="site-name">Narrative Constructs</p>
+    <p class="site-valueprop">
+      <strong>Narrative Constructs is a legal innovation holding</strong> — it develops the theory, and builds the ventures that apply it.
+    </p>
+  </div>
+
+  <section class="pole-menu">
+
+    <details class="pole" open>
+      <summary class="pole-header">
+        <span class="pole-name">ClausTheory</span>
+        <span class="pole-sub">Reflexive legal doctrine</span>
+        <span class="pole-count">research</span>
+        <span class="pole-chevron" aria-hidden="true"></span>
+      </summary>
+      <p class="pole-valueprop">
+        <strong>ClausTheory is a reflexive legal doctrine.</strong> It produces the frameworks ClausLabs and ClausWorks apply to their respective products.
+      </p>
+      <div class="pole-body">
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Reflexive Legal Frameworks</span><span class="badge badge-research">research</span></div>
+          <p class="entry-desc">Foundational theory underlying the holding's applied labs.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Codex</span><span class="badge badge-research">research</span></div>
+          <p class="entry-desc">Governing principles and legitimacy mechanisms of the system.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="pole">
+      <summary class="pole-header">
+        <span class="pole-name">ClausLabs</span>
+        <span class="pole-sub">Pre-contentious intelligence lab</span>
+        <span class="pole-count">4 projects</span>
+        <span class="pole-chevron" aria-hidden="true"></span>
+      </summary>
+      <p class="pole-valueprop">
+        <strong>ClausLabs is a pre-contentious intelligence lab</strong>, applying ClausTheory's frameworks to litigation and arbitration alike.
+      </p>
+      <div class="pole-body">
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Auditum Memoria</span><span class="badge badge-live">live</span></div>
+          <p class="entry-desc">Pre-litigation intelligence clinic for workplace disputes.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Möttrum</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Marketplace for pre-litigation assets.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Hālo</span><span class="badge badge-concept">concept</span></div>
+          <p class="entry-desc">Distributed personal protection with legal interposition.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Orbitum</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Civic infrastructure for pre-litigation conflict mapping between individuals.</p>
+        </div>
+      </div>
+    </details>
+
+    <details class="pole">
+      <summary class="pole-header">
+        <span class="pole-name">ClausWorks</span>
+        <span class="pole-sub">Regulatory entrepreneurship studio</span>
+        <span class="pole-count">4 projects</span>
+        <span class="pole-chevron" aria-hidden="true"></span>
+      </summary>
+      <p class="pole-valueprop">
+        <strong>ClausWorks is a regulatory entrepreneurship studio</strong>, building consumer products in markets where the law is still being written.
+      </p>
+      <div class="pole-body">
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Cohort</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Consumer reviews and collective litigation funding.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Vetnups</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Commitment-oriented dating app with vetted profile attributes.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Cluster</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Curated marketplace for fragmented and distributed functional extended stay.</p>
+        </div>
+        <div class="entry">
+          <div class="entry-head"><span class="entry-name">Curb</span><span class="badge badge-draft">draft</span></div>
+          <p class="entry-desc">Hybrid secondhand marketplace with physical exchange spaces.</p>
+        </div>
+      </div>
+    </details>
+
+  </section>
+
+</div>
+</body>
+</html>
