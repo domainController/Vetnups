@@ -4,7 +4,8 @@ Single-file static landing page testing the value proposition: *"Vetnups is a
 commitment-oriented dating app with vetted profile attributes."*
 
 - `index.html` — the whole page (HTML/CSS/JS inline, no build step).
-- Fonts load from Google Fonts (IBM Plex Serif, Sans, Mono) over a CDN link.
+- Fonts load from Google Fonts (Bodoni Moda for display, Archivo for body, IBM Plex Mono
+  for labels/data) over a CDN link.
 - Hero photography is hotlinked from Unsplash (free license, no attribution required) —
   Juno Jo and Rebecca Chandler. Placeholder lifestyle imagery, not real product/profile photos.
 - The email capture form is a static mock — it does not submit anywhere yet.
